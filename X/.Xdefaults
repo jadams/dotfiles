@@ -1,0 +1,29 @@
+URxvt.font: xft:Hack:pixelsize=24
+URxvt.scrollBar: false
+URxvt.cursorBlink: true
+URxvt.jumpScroll: true
+URxvt.transparent: true
+URxvt.shading: 10
+URxvt.url-launcher: /usr/bin/firefox-bin
+URxvt.perl-ext-common: default,matcher
+URxvt.matcher.button: 1
+
+URxvt.foreground:  #FFFFFF
+URxvt.background:  #000000
+
+*color0:  #2E3436
+*color1:  #a40000
+*color2:  #4E9A06
+*color3:  #C4A000
+*color4:  #3465A4
+*color5:  #75507B
+*color6:  #ce5c00
+*color7:  #babdb9
+*color8:  #555753
+*color9:  #EF2929
+*color10: #8AE234
+*color11: #FCE94F
+*color12: #729FCF
+*color13: #AD7FA8
+*color14: #fcaf3e
+*color15: #EEEEEC

@@ -1,0 +1,23 @@
+"sudo bl-brightness down"
+  c:232
+
+"sudo bl-brightness up"
+  c:233
+
+"sudo kb-brightness down"
+  c:237
+
+"sudo kb-brightness up"
+  c:238
+
+"amixer set Master 5%-"
+  c:122
+
+"amixer set Master 5%+"
+  c:123
+
+"amixer set Master toggle"
+  c:121
+
+"scrot"
+  m:0x0 + c:107
