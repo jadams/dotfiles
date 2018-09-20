@@ -1,0 +1,5 @@
+#!/bin/sh
+unset LD_PRELOAD
+LD_LIBRARY_PATH="$HOME/.firefox/" \
+GTK_PATH=/usr/lib64/gtk-3.0/ \
+exec $HOME/.firefox/firefox "$@"
