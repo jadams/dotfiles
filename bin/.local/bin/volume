@@ -1,0 +1,15 @@
+#!/bin/bash
+xob_file=/var/run/.vol_xob
+step=5
+if [ "$1" == "up" ];then
+   amixer set Master $step%+
+elif [ "$1" == "down" ];then 
+   amixer set Master $step%-
+elif [ "$1" == "mute" ];then
+   amixer set Master toggle
+fi
+if [[ `amixer get Master | grep off` ]];then
+   echo 0 > $xob_file
+else
+   echo `amixer get Master | awk -F"[][]" '/dB/ {print $2}'` > $xob_file
+fi

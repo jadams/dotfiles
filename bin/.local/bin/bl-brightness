@@ -1,5 +1,6 @@
 #!/bin/bash
 bldb='/sys/class/backlight/intel_backlight/brightness'
+xob_file=/var/run/.bl_xob
 step=50
 current=`cat $bldb`
 new=$current
@@ -13,3 +14,4 @@ if [ $new -le 0 ];then
 fi
 echo $new > $bldb
 current=`cat $bldb`
+echo $current > $xob_file
