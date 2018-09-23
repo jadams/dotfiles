@@ -11,5 +11,6 @@ fi
 if [[ `amixer get Master | grep off` ]];then
    echo 0 > $xob_file
 else
-   echo `amixer get Master | awk -F"[][]" '/dB/ {print $2}'` > $xob_file
+   current=`amixer get Master | awk -F"[][]" '/dB/ {print $2}'`
+   echo $current > $xob_file
 fi
