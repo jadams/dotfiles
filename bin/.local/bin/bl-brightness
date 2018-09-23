@@ -13,5 +13,4 @@ if [ $new -le 0 ];then
    new=0
 fi
 echo $new > $bldb
-current=`cat $bldb`
-echo $current > $xob_file
+echo $new > $xob_file
