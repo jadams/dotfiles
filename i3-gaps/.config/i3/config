@@ -205,7 +205,7 @@ bindcode 237 exec --no-startup-id sudo kb-brightness down
 bindcode 238 exec --no-startup-id sudo kb-brightness up
 
 
-bindsym $mod+Ctrl+l exec "betterlockscreen -l && sleep 1s && xset dpms force off"
+bindsym $mod+Ctrl+l exec --no-startup-id "betterlockscreen -l"
 #bindsym $mod+Ctrl+l exec "xautolock -locknow && sleep 1s && xset dpms force off"
 #exec --no-startup-id xautolock -time 5 -locker "betterlockscreen -l" -notify 120 -notifier "xset dpms force off" &
 #exec --no-startup-id xbindkeys
