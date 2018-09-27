@@ -1,0 +1,9 @@
+#!/bin/bash
+xob_files="/var/run/.bl_xob /var/run/.kb_xob /var/run/.vol_xob"
+for xob_file in $xob_files;do
+    sudo rm -f $xob_file
+    sudo mkfifo -m777 $xob_file
+done
+tail -f /var/run/.bl_xob | xob -m 1350 &>/dev/null &
+tail -f /var/run/.kb_xob | xob -m 255 &>/dev/null &
+tail -f /var/run/.vol_xob | xob &>/dev/null &

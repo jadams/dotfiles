@@ -196,7 +196,6 @@ bar {
 }
 #exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-bindsym $mod+Ctrl+l exec "xautolock -locknow && sleep 1s && xset dpms force off"
 bindcode 121 exec --no-startup-id volume mute
 bindcode 122 exec --no-startup-id volume down
 bindcode 123 exec --no-startup-id volume up
@@ -206,13 +205,12 @@ bindcode 237 exec --no-startup-id sudo kb-brightness down
 bindcode 238 exec --no-startup-id sudo kb-brightness up
 
 
-exec --no-startup-id xautolock -time 5 -locker "betterlockscreen -l" -notify 120 -notifier "xset dpms force off" &
-exec --no-startup-id xbindkeys
+bindsym $mod+Ctrl+l exec "betterlockscreen -l && sleep 1s && xset dpms force off"
+#bindsym $mod+Ctrl+l exec "xautolock -locknow && sleep 1s && xset dpms force off"
+#exec --no-startup-id xautolock -time 5 -locker "betterlockscreen -l" -notify 120 -notifier "xset dpms force off" &
+#exec --no-startup-id xbindkeys
 exec --no-startup-id xinput set-prop bcm5974 "libinput Tapping Enabled" 1
 exec --no-startup-id betterlockscreen -w dim
 exec --no-startup-id redshift -l 21.363106:-158.082206 &
 exec --no-startup-id dropbox-cli start
-exec --no-startup-id tail -f /var/run/.bl_xob | xob -m 1350 &>/dev/null &
-exec --no-startup-id tail -f /var/run/.kb_xob | xob -m 255 &>/dev/null &
-exec --no-startup-id tail -f /var/run/.vol_xob | xob &>/dev/null &
-
+exec --no-startup-id startxob
