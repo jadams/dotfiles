@@ -1,6 +1,6 @@
 #!/bin/bash
-kbdb='/sys/devices/platform/applesmc.768/leds/smc::kbd_backlight/brightness'
-xob_file=/var/run/.kb_xob
+kbdb='/sys/devices/platform/applesmc768/leds/smc::kbd_backlight/brightness'
+xob_file=/var/run/kb_xob
 step=25
 current=`cat $kbdb`
 new=$current

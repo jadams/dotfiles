@@ -1,6 +1,6 @@
 #!/bin/bash
 bldb='/sys/class/backlight/intel_backlight/brightness'
-xob_file=/var/run/.bl_xob
+xob_file=/var/run/bl_xob
 step=50
 current=`cat $bldb`
 new=$current
