@@ -51,13 +51,13 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = "Wuncon Siji:pixelsize=10;1"
+font-0 = Hack:pixelsize=16;1
+font-1 = unifont:fontformat=truetype:size=14:antialias=false;0
+font-2 = Siji:pixelsize=16;1
 
 modules-left = i3
 ;modules-center = wlan
-modules-right = filesystem xbacklight alsa wlan memory cpu battery temperature date powermenu
+modules-right = filesystem alsa eth memory cpu temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -243,7 +243,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = 
+interface = eno1
 interval = 3.0
 
 format-connected-underline = #55aa55
@@ -366,7 +366,7 @@ animation-discharging-framerate = 750
 
 [module/temperature]
 type = internal/temperature
-thermal-zone = 0
+thermal-zone = 2
 warn-temperature = 60
 
 format = <ramp> <label>

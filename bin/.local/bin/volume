@@ -1,5 +1,5 @@
 #!/bin/bash
-xob_file=/var/run/vol_xob
+xob_file=/tmp/vol_xob
 step=5
 if [ "$1" == "up" ];then
    amixer set Master $step%+
