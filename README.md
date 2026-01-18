@@ -1,7 +1,8 @@
 # dotfiles
 ```bash
 # install git and clone repo
-sudo apt install -y git
+sudo apt install -y git git-lfs
+git lfs install
 git clone --recursive https://github.com/jadams/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 # instal apt packages
