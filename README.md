@@ -16,6 +16,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
 brew bundle install --file .Brewfile
 # install dotfiles
 stow .
+fc-cache -fv
 # install tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
 sudo tailscale up
