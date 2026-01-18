@@ -1,0 +1,10 @@
+build-essential
+curl
+ddcutil
+git
+gnome-shell-extension-manager
+gnome-tweaks
+opensc
+opensc-pkcs11
+scdaemon
+virt-viewer
