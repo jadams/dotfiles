@@ -7,7 +7,7 @@ cd ~/.dotfiles
 # instal apt packages
 sudo apt install -y $(< .Aptfile)
 # install snap packages
-while read -r snap; do sudo snap install "${snap}"; done < .Snapfile
+while read -r snap; do sudo snap install ${snap}; done < .Snapfile
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
