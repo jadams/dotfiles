@@ -2,6 +2,7 @@ build-essential
 curl
 ddcutil
 git
+git-lfs
 gnome-shell-extension-manager
 gnome-tweaks
 opensc
