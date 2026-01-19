@@ -22,8 +22,8 @@ PATH="/home/linuxbrew/.linuxbrew/opt/helm@3/bin:$PATH"
 ################################################################
 # ALIASES
 ################################################################
-update="sudo bash -c 'apt update && apt dist-upgrade -y && snap refresh'"
-windows="sudo bash -c 'efibootmgr -n 0000 && reboot'"
+alias update="sudo bash -c 'apt update && apt dist-upgrade -y && snap refresh'"
+alias windows="sudo bash -c 'efibootmgr -n 0000 && reboot'"
 
 ################################################################
 # FUNCTIONS
