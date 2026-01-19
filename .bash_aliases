@@ -34,16 +34,16 @@ import-gpgsm() {
 
 encrypt() {
   if [[ -f "${1}" ]]; then
-    gpgsm --disable-crl-checks --encrypt --armor --recipient "$(gpgsm -k | awk '/aka/ {print $2}')" --output "${1}.p7m.asc" "${1}"
+    gpgsm --disable-crl-checks --encrypt --armor --recipient "$(gpgsm -k | awk '/aka/ {print $2}')" --output "${1}.asc" "${1}"
   else
     echo "Usage: ${FUNCNAME[0]} <file>"
   fi
 }
 
 decrypt() {
-  if [[ -f "${1}" ]] && [[ "${1}" == *.p7m.asc ]]; then
-    gpgsm --disable-crl-checks --decrypt --output "$(basename ${1} .p7m.asc)" "${1}"
+  if [[ -f "${1}" ]] && [[ "${1}" == *.asc ]]; then
+    gpgsm --disable-crl-checks --decrypt --output "$(basename ${1} .asc)" "${1}"
   else
-    echo "Usage: ${FUNCNAME[0]} <file.enc.b64>"
+    echo "Usage: ${FUNCNAME[0]} <file.asc>"
   fi
 }
