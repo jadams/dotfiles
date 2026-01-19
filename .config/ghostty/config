@@ -53,4 +53,4 @@ font-family = "FiraCode Nerd Font"
 background-opacity = 0.9
 background-blur = true
 scrollback-limit = 2147483648
-shell-integration-features = sudo, ssh-env
+shell-integration-features = sudo, title, ssh-env
