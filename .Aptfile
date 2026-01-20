@@ -5,6 +5,7 @@ git
 git-lfs
 gnome-shell-extension-manager
 gnome-tweaks
+libnss3-tools
 opensc
 opensc-pkcs11
 scdaemon
