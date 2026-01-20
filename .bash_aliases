@@ -24,6 +24,7 @@ PATH="/home/linuxbrew/.linuxbrew/opt/helm@3/bin:$PATH"
 ################################################################
 alias update="sudo bash -c 'apt update && apt dist-upgrade -y && snap refresh'"
 alias windows="sudo bash -c 'efibootmgr -n 0000 && reboot'"
+alias diff='diff --color=auto'
 
 ################################################################
 # FUNCTIONS
