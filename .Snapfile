@@ -1,8 +1,8 @@
 chromium
 discord
 docker
+element-desktop
 firefox
-fluffychat
 ghostty --classic
 lxd
 onlyoffice-desktopeditors
