@@ -20,6 +20,12 @@ alias lxc='TERM=xterm-256color lxc'
 ################################################################
 # FUNCTIONS
 ################################################################
+sshaddsm() {
+  ssh-add -e /usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so
+  ssh-add -D
+  ssh-add -s /usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so
+}
+
 importsm() {
   gpgsm --import <(openssl x509 -inform DER -in <(pkcs11-tool --read-object --id 03 --type cert) -outform PEM)
 }
