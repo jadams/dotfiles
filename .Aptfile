@@ -1,12 +1,13 @@
 build-essential
 curl
-ddcutil
 git
 git-lfs
 gnome-shell-extension-manager
 gnome-tweaks
+gnupg-pkcs11-scd
 libnss3-tools
 opensc
 opensc-pkcs11
-scdaemon
+pcsc-tools
+pcscd
 virt-viewer
